@@ -190,6 +190,29 @@ class WC_API_Client_Resource_Customers extends WC_API_Client_Resource {
 		return $this->do_request();
 	}
 
+	/**
+	 * Get customer subscriptions
+	 *
+	 * This API endpoint is enabled only when WooCommerce Subscriptions is installed on the
+	 * server (https://www.woothemes.com/products/woocommerce-subscriptions/).
+	 *
+	 * GET /customers/#{customer_id}/subscriptions
+	 *
+	 * @param int $id customer ID
+	 * @param array $args acceptable customer subscriptions endpoint args, currently only `fields`
+	 * @return array|object customer subscriptions!
+	 */
+	public function get_subscriptions( $id, $args = array() ) {
+
+		$this->set_request_args( array(
+			'method' => 'GET',
+			'path'	 => array( $id, 'subscriptions' ),
+			'params' => $args,
+		) );
+
+		return $this->do_request();
+	}
+
 
 	/** Convenience methods - these do not map directly to an endpoint ********/
 
