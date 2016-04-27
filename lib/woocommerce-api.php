@@ -31,3 +31,4 @@ require_once( $dir . '/resources/class-wc-api-client-resource-order-refunds.php'
 require_once( $dir . '/resources/class-wc-api-client-resource-products.php' );
 require_once( $dir . '/resources/class-wc-api-client-resource-reports.php' );
 require_once( $dir . '/resources/class-wc-api-client-resource-webhooks.php' );
+require_once( $dir . '/resources/class-wc-api-client-resource-subscriptions.php' );

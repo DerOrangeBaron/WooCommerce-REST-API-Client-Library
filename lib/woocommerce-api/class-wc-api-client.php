@@ -128,6 +128,7 @@ class WC_API_Client {
 			'WC_API_Client_Resource_Products'      => 'products',
 			'WC_API_Client_Resource_Reports'       => 'reports',
 			'WC_API_Client_Resource_Webhooks'      => 'webhooks',
+			'WC_API_Client_Resource_Subscriptions' => 'subscriptions',
 		);
 
 		foreach ( $resources as $resource_class => $resource_method ) {
