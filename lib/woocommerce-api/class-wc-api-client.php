@@ -118,17 +118,18 @@ class WC_API_Client {
 	public function init_resources() {
 
 		$resources = array(
-			'WC_API_Client_Resource_Coupons'       => 'coupons',
-			'WC_API_Client_Resource_Custom'        => 'custom',
-			'WC_API_Client_Resource_Customers'     => 'customers',
-			'WC_API_Client_Resource_Index'         => 'index',
-			'WC_API_Client_Resource_Orders'        => 'orders',
-			'WC_API_Client_Resource_Order_Notes'   => 'order_notes',
-			'WC_API_Client_Resource_Order_Refunds' => 'order_refunds',
-			'WC_API_Client_Resource_Products'      => 'products',
-			'WC_API_Client_Resource_Reports'       => 'reports',
-			'WC_API_Client_Resource_Webhooks'      => 'webhooks',
-			'WC_API_Client_Resource_Subscriptions' => 'subscriptions',
+			'WC_API_Client_Resource_Coupons'            => 'coupons',
+			'WC_API_Client_Resource_Custom'             => 'custom',
+			'WC_API_Client_Resource_Customers'          => 'customers',
+			'WC_API_Client_Resource_Index'              => 'index',
+			'WC_API_Client_Resource_Orders'             => 'orders',
+			'WC_API_Client_Resource_Order_Notes'        => 'order_notes',
+			'WC_API_Client_Resource_Order_Refunds'      => 'order_refunds',
+			'WC_API_Client_Resource_Products'           => 'products',
+			'WC_API_Client_Resource_Product_Attributes' => 'product_attributes',
+			'WC_API_Client_Resource_Reports'            => 'reports',
+			'WC_API_Client_Resource_Webhooks'           => 'webhooks',
+			'WC_API_Client_Resource_Subscriptions'      => 'subscriptions',
 		);
 
 		foreach ( $resources as $resource_class => $resource_method ) {
